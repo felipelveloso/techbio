@@ -1,0 +1,194 @@
+@import url("/styles/galery.css");
+@import url("/styles/contato.css");
+
+:root {
+    --cor-principal: #A61817;
+    --cor-secundaria: #0768A6;
+    --cor-terciaria: #083A59;
+    --cor-font: #4e4e4e;
+    --cor-paragrafo: #667085;
+    --font: 'Inter', sans-serif;
+    --gradiente: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(190,190,190,1) 50%, rgba(242,242,242,1) 100%);
+}
+
+body{
+    background: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+}
+
+.contatos_iniciais {
+    display: flex;
+    background-color: #292929;
+    height: 45px;
+    padding: 0 25em ;
+    font-style: var(--font);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links_iniciais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5em;
+}
+
+.contatos_iniciais-textos {
+    font-size: 14px;
+    color: white;
+    margin: 0 1em;
+}
+
+.foto_capa {
+    display: flex;
+    width: 100%;
+}
+
+
+.content {
+    background: white;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 3em;
+    justify-content: space-around;
+    box-shadow: 1px 1px 15px #3a3a3a;
+    text-align: center;
+}
+
+.logo {
+    padding: 6em;
+}
+
+
+.link{
+    text-decoration: none;
+    color: #212121;
+    padding: .6em;
+}
+
+.link:hover {
+    color: var(--cor-secundaria);
+    text-shadow: 1px 2px 60px #000000;
+}
+
+.cabecalho {
+    font-style: var(--font);
+    font-size: 14px;
+}
+
+.sobrenos {
+    display: flex;
+    padding: 3em;
+    width: 1200px;
+    gap: 2em;
+    margin: 25px auto;
+}
+
+.sobrenos_filho {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.titulo-cabecalho {
+    color: var(--cor-secundaria);
+    width: 150px;
+    
+    align-self:flex-start;
+    font-size: 24px;
+    
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.cabecalho__titulo {
+    color: var(--cor-font);
+    font-size: 22px;
+    font-weight: 700;
+    align-self: flex-start;
+    padding: 0 .1em;
+}
+
+.servicos {
+    align-self: flex-start;
+}
+
+.cabecalho__descricao {
+    color: var(--cor-paragrafo );
+    font-size: 16px;
+    text-align: left;
+    padding: .4em;
+}
+
+.metricas {
+    display: flex;
+    color: white;
+    background-color: var(--cor-font);
+    padding: 0 20em 2em 20em;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px;
+}
+.caixa_metricas {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.destaque_metricas {
+    font-size: 36px;
+    padding: 1em;
+}
+
+.zap {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 1%;
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 3em;
+    align-items: center;
+    background-color: var(--gradiente);
+}
+
+.secao_depoimentos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cartao_depoimento {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 1em;
+    gap: 1em;
+}
+.secao_descricao {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    gap: 1em;
+}
+.descricao {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    
+}
+
+.texto_chamada {
+    font-size: 16px;
+    font-weight: 100;
+}
